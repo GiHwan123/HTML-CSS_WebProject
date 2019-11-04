@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>:: For Your Flavorite ::</title>
+	<style>
+		#header {
+			background-color : white;
+			width : 1500px;
+			height : 200px;
+			text-align : bottom-left;
+			background-image : url("logo.jpg");
+			background-repeat : no-repeat;
+			background-position : center;
+			border-color : red;
+			border-width : 2px;
+			border-bottom-style : solid;
+		}
+		#connav{
+			width : 1500px;
+			
+		}
+		#content {
+			width : 400px;
+			float : left;
+			height : 300px;
+			text-align : center;
+		}
+		#youtube {
+			width : 600px;
+			height : 300px;
+			float : left;
+			text-align : center;
+		
+		}
+		#youtube video {
+			
+		}
+		#side { 
+			width : 500px;
+			height : 600px;
+			float : right;
+			text-align : left;
+			
+		
+			}
+		#main {
+			width  :1000px;
+			height : 300px;
+			float : right;
+			text-align : center;
+		}
+		#footer {
+			width : 1000px;
+			height : 200px;
+			clear : both;
+			border : 1px solid red;
+			margin : 10px;
+			
+		}
+		
+		
+		#main table ,#main td {
+			border : 1px solid black;
+		}
+		#main table{
+			border-collapse : collapse;
+		}
+		#mktable {
+			width : 800px;
+			margin-left : 100px;
+			margin-top : 50px;
+			height : 200px;
+		}
+		#mktable td {
+			padding : 20px;
+		}
+		
+		
+		body{
+		font-family : "맑은 고딕", "돋움";
+		}
+		#login{
+			border : 1px dotted green;
+			border-radius : 50px;
+			font-size : 15px;
+			color : #444444;
+			margin : 10px;
+			padding : 10px;
+		}
+		#login input {
+			width : 200px;
+			height : 20px;
+		}
+		#id_pass, #btn_login{
+			display : inline-block;
+			vertical-align : top;
+		}
+		#id_pass span { display : inline-block; width : 20px;}
+		#pass {
+			margin-top : 3px;
+		}
+		#login ul {
+			list-style-type:none;
+		}
+		#btn_login button {
+			margin-left : 5px;
+			padding : 12px;
+		}
+		#btns { margin:12px;
+				text-decoration : underline;}
+		#btns li {
+			margin-left : 10px;
+			display : inline;
+	}
+		#btn_login {
+			margin-top : 20px;
+			margin-left : 120px;
+		}
+		#bestbob table, #bestbob td {
+			border : 1px solid black;
+		}
+		#bestbob table {
+			border-collapse : collapse;
+		}
+		
+		#content img{
+			width : 400px;
+			height : 300px;
+		}
+		
+		#bestLi li {
+			list-style-image : url("like.png");
+			padding : 10px;
+			
+		}
+		#bestLi {
+			margin : 20px;
+			
+		}
+		.bestname{
+			background-color : yellow;
+			
+		}
+		.m1{
+			background-image : url("Jongno.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+			
+		}
+		.m2{
+			background-image : url("Mapo-gu.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+		}
+		.m3{
+			background-image : url("Gangnam.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+		}
+		.m4{
+			background-image : url("Seodaemun.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+		}
+		.m5{
+			background-image : url("Yeongdeungpo.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+		}
+		.m6{
+			background-image : url("Yongsan.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+		}
+		.m7{
+			background-image : url("Jung.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+		}
+		.m8{
+			background-image : url("Songpa.png");
+			background-repeat : no-repeat;
+			background-size : 70%;
+			background-position : center;
+			
+		}
+		
+		#footer img{
+			width : 50px;
+			height : 50px;
+			margin : 30px;
+		}
+	</style>
+	<script language="javascript">
+		function OnMouseIn(elem){
+		elem.style.border = "2px solid red";
+		}
+		function OnMouseOut(elem){
+			elem.style.border="";
+		}
+		function login (){
+			func();
+			var id, pass;
+			id = document.getElementById("edt_id").value;
+			pass = document.getElementById("edt_pass").value;
+			if(id != "gachon" || pass != "1234"){
+			
+				alert("id 또는 비밀번호가 맞지 않습니다.");
+			}
+			else{
+				func();
+			}
+			
+		}
+		function func(){
+			location.href = "./link_page.html";
+		}
+	</script>
+</head>
+<body>
+	<div id = "wrapper">
+		<div id = "header"></div>
+		<div id = "connav">
+		<div id = "content">
+		<img src = "roll_1.jpg"></img>
+		</div>
+		<div id = "youtube">
+			<video width="500px" height ="300px" controls>
+				<source src = "youtubeMa.mp4" type = "video/mp4">
+			</video>
+		</div>
+		<div id = "side">
+			<form>
+				<div id = "login">
+				<h3>로그인</h3>
+				<ul>
+					<li id = "id_pass">
+						<ul>
+							<li>
+								<span>ID</span>
+								<input type = "text" id = "edt_id">
+							</li>
+							<li id = "pass">
+								<span>PW</span>
+								<input type = "password" id = "edt_pass">
+							</li>
+						</ul>
+					</li>
+					<li id = "btn_login">
+						<button onclick = "login()">로그인</button>
+					</li>
+					</ul>
+					<ul id ="btns">
+						<li><a href = "">회원 가입</a></li>
+						<li><a href = "">아이디/비밀번호 찾기</a></li>
+					</ul>
+			</div>
+		
+		<form >
+		<div id = "bestbob">
+			<table id = "bestLi">
+				<caption>오늘의 맛집 베스트 6!</caption>
+				<tr >
+					<td class = "bestname"><a href="https://store.naver.com/restaurants/detail?entry=pll&id=36369077&query=%ED%86%A0%EB%81%BC%EC%A0%95%20%EA%B0%95%EB%82%A8%EC%A0%90">토끼정 - 서울 강남구 봉은사로6길 32</a></td>
+					<td>
+					<ul>
+						<li>5,129</li>
+					</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class = "bestname"><a href="https://store.naver.com/restaurants/detail?entry=pll&id=21607745&query=%EB%B0%94%EB%B9%84%EB%A0%88%EB%93%9C%20%EA%B0%95%EB%82%A8">바비레드 - 서울 강남구 봉은사로6길 39</a></td>
+					<td>
+					<ul>
+						<li>4,986</li>
+					</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class = "bestname"><a href="https://store.naver.com/restaurants/detail?entry=pll&id=1298530125&query=%EB%95%80%EB%95%80">땀땀 - 서울 강남구 강남대로98길 12-5</a></td>
+					<td>
+					<ul>
+						<li>3,586</li>
+					</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class = "bestname"><a href="https://store.naver.com/restaurants/detail?entry=pll&id=31608396&query=%EB%B3%B4%EB%8B%88%EC%8A%A4%ED%94%BC%EC%9E%90%ED%8E%8D">보니스피자펍 - 서울 용산구 신흥로3길 2</a></td>
+					<td>
+					<ul>
+						<li>2,854</li>
+					</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class = "bestname"><a href="https://store.naver.com/restaurants/detail?id=36297977">매덕스피자 - 서울 용산구 이태원로26길 26</a></td>
+					<td>
+					<ul>
+						<li>1,789</li>
+					</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class = "bestname"><a href = "https://store.naver.com/restaurants/detail?id=1437944903">모터시티 - 서울 용산구 이태원로 140-1</a></td>
+					<td>
+					<ul>
+						<li>1,523</li>
+					</ul>
+					</td>
+				</tr>
+			</table>
+			</div>
+		</form>
+		
+		
+		</div>
+		<div id = "main">
+			<table id = "mktable" border ="1" >
+				<tr>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)" class="m1"><a href="GiHwan/종로구 메인화면.html" target="_blank">종로구</a></td>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)"class="m2"><a href="GiHwan/마포구 메인화면.html" target="_blank">마포구</a></td>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)"class="m3"><a href="GiHwan/강남구 메인화면.html" target="_blank">강남구</a></td>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)"class="m4"><a href="GiHwan/서대문구 메인화면.html" target="_blank">서대문구</a></td>
+				</tr>
+				<tr>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)"class="m5"><a href="Mingue/영등포.html" target="_blank">영등포구</a></td>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)"class="m6"><a href="Mingue/용산.html" target="_blank">용산구</a></td>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)"class="m7"><a href="Mingue/중구.html" target="_blank">중구</a></td>
+					<td onmouseover = "OnMouseIn(this)" onmouseout = "OnMouseOut(this)"class="m8"><a href="Mingue/송파구.html" target="_blank">송파구</a></td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+	<div id = "footer">
+	<h3 style = "text-decoration : underline">맛집 배달도 손쉽게!</h3>
+	<a href="https://www.baemin.com/" target="_blank"><img src = "baemin.jpg"></a>
+	<a href="https://www.yogiyo.co.kr/mobile/?gclid=CjwKCAjw3azoBRAXEiwA-_64OtKPOyaUNKFSPpCg-Oqtu_Ife1B1YqLEWbmcnOD9qhsZZLNEa9Oe0xoCt_QQAvD_BwE#/" target="_blank"><img src = "YogiYo.jpg"></a>
+	<a href="http://www.bdtong.co.kr/" target="_blank"><img src = "baedaltong.jpg"></a>
+	<img src = "준비중.jpg"></img>
+	<img src = "준비중.jpg"></img>
+	<img src = "준비중.jpg"></img>
+	</div>
+</body>
+</html>
